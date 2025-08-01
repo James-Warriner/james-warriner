@@ -1,4 +1,4 @@
-/* Enhanced responsive styles for mobile */
+
 
 .mode-switch input {
   accent-color: #0d6efd;
@@ -86,21 +86,29 @@
   line-height: 1.4;
 }
 
-/* Mobile-specific adjustments */
+
 @media (max-width: 576px) {
-  /* Stack mode-switch vertically */
+ 
   .mode-switch {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
   }
-  .mode-switch input,
   .mode-switch label {
-    width: 100%;
-    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0;
+  }
+  .mode-switch input {
+    margin-right: 0.5rem;
+    flex-shrink: 0;
   }
 
-  /* Stack Postman controls */
+
   .postman-controls {
     flex-direction: column;
   }
@@ -108,10 +116,10 @@
   .url-input,
   .send-btn {
     width: 100%;
-    margin: 0 0 0.5rem 0;
+    margin-bottom: 0.5rem;
   }
 
-  /* Reduce code and JSON text sizes */
+ 
   .headers,
   .body {
     min-height: 80px;
@@ -122,7 +130,7 @@
     font-size: 0.85rem;
   }
 
-  /* JSON display tweaks */
+  
   .json-array-item {
     padding: 0.25rem;
   }
@@ -133,10 +141,28 @@
     font-size: 0.85rem;
   }
 
-  /* Central and Postman container padding adjustments */
   .central-container,
   .postman-section,
   .mode-content {
     padding: 1rem !important;
   }
+}
+
+
+.response-content.fullscreen {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  background: #fff;
+  z-index: 1050; 
+  overflow: auto;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
+body.response-expanded {
+  overflow: hidden;
 }

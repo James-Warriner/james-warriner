@@ -1,3 +1,19 @@
+    document.addEventListener('DOMContentLoaded', () => {
+
+
+  const expandBtn = document.getElementById('expandResponse');
+  const responsePre = document.getElementById('response');
+
+  expandBtn.addEventListener('click', () => {
+    const isFull = responsePre.classList.toggle('fullscreen');
+    document.body.classList.toggle('response-expanded', isFull);
+    expandBtn.textContent = isFull ? '❎' : '🔍';
+    expandBtn.title = isFull ? 'Close' : 'Expand';
+  });
+});
+
+    
+    
     document
       .querySelectorAll('input[name="mode"]')
       .forEach(radio => {
