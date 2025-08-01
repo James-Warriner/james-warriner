@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   openBtn.addEventListener('click', () => {
   
-    modalPre.textContent = respPre.textContent || '[ no response ]';
+    modalPre.textContent = JSON.stringify(respPre.textContent,null,2) || '[ no response ]';
  
     respModal.show();
   });
