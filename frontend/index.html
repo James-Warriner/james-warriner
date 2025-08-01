@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-around"
+        id="navMenu"
+      >
+        <ul class="navbar-nav w-100">
+          <li class="nav-item text-center">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="container mt-5">
+  
+    <h1 class="text-center mb-4">Welcome to My Portfolio</h1>
+
+    <div class="central-container p-4 bg-white rounded shadow">
+
+      <p class="lead">
+        Hey there, I'm James and welcome to my portfolio. This portfolio showcases some of my projects (including this hand-built page and APIs!). Have a look around and if anything catches your eye, don't be afraid to hit the contact button!
+      </p>
+    </div>
+    <div class="central-container p-4 bg-white rounded shadow mt-5">
+
+      <div class="horizontal-scroll-grid">
+         <div class="card p-3">
+    <a href="easyvid.onrender.com"><h5>TrackMate</h5></a>
+    <p>An ongoing project used to track car drag times, built with React Native using native sensors</p>
+    <div class="card p-3"><img src="./assets/grid4.png"/></div>
+  </div>
+  <div class="card p-3">
+    <a href="https://github.com/James-Warriner/Translate"><h5>Translate</h5></a>
+    <p>Translator web app that uses flask as a backend, leveraging a machine learning library to translate text, image and audio</p>
+    <div class="card p-3"><img src="./assets/grid1.png"/></div>
+  </div>
+  <div class="card p-3">
+    <a href="https://easyvid.onrender.com"><h5>EasyVid</h5></a>
+    <p>A really simple website built to convert .mts files to .mp4 files built with express leveraging the ffmpeg library</p>
+    <div class="card p-3"><img src="./assets/grid2.png"/></div>
+    
+  </div>
+    <div class="card p-3">
+    <a href="https://github.com/James-Warriner/Gym-Pulse"><h5>GymPulse</h5></a>
+    <p>A workout tracking site that automatically calculates leaderboards based on a gym. Built with flask and html</p>
+    
+    <div class="card p-3"><img src="./assets/grid3.png"/></div>
+    <a href="https://www.youtube.com/watch?v=c6k1P9JwcfM"><p>Demo</p></a>
+  </div>
+
+
+</div>
+    </div>
+  </div>
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

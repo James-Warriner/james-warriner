@@ -1,0 +1,14 @@
+{
+    "facts":[
+        {"fact":"One of my favourite hobbies are cars!", "rarity":"Common"},
+        {"fact":"One of my favourite hobbies is going to the gym and lifting weights", "rarity":"Common"},
+        {"fact":"I have a fox red labrador named Bruno", "rarity":"Uncommon"},
+        {"fact":"My favourite movie is Happy Gilmore", "rarity":"Uncommon"},
+        {"fact":"My first programming language was Python", "rarity":"Rare"},
+        {"fact":"My favourite programming language is Javascript (so versatile!)", "rarity":"Rare"},
+        {"fact":"My dream job is a software architect", "rarity":"Epic"},
+        {"fact":"My first job was at a truck yard, checking wheelnuts with a torque wrench!", "rarity":"Epic"}
+ 
+
+    ]
+}

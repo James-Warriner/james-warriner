@@ -1,0 +1,95 @@
+
+
+.mode-switch input {
+  accent-color: #0d6efd;
+}
+.mode-switch label {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+.mode-content { display: none; }
+.mode-content.active { display: block; }
+
+
+.gui-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+
+.api-section {
+  font-family: 'Courier New', monospace;
+}
+
+.postman-section {
+  background-color: #f4f4f4;
+  border: 1px solid #ced4da;
+}
+
+
+.method-select {
+  width: 5rem;
+}
+.url-input {
+  flex: 1;
+}
+
+
+.headers,
+.body {
+  min-height: 120px;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+
+.response-content {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25rem;
+  max-height: 300px;
+  overflow-y: auto;
+  font-size: 0.9rem;
+}
+
+.json-section {
+  margin-bottom: 1.5rem;
+  border-left: 3px solid #0d6efd;
+  padding-left: 1rem;
+}
+
+.json-array-item {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.json-kv h4 {
+  margin: 0.75rem 0 0.25rem;
+  font-size: 1rem;
+  color: #0d6efd;
+}
+
+.json-kv p {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+
+@media (max-width: 576px) {
+  .json-array-item {
+    padding: 0.25rem;
+  }
+  .json-kv h4 {
+    font-size: 0.9rem;
+  }
+  .json-kv p {
+    font-size: 0.85rem;
+  }
+}
+

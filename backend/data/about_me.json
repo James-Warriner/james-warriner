@@ -1,0 +1,36 @@
+{
+    "Name":"James Warriner",
+    "Location":"Leeds, UK",
+    "GitHub":"https://github.com/James-Warriner/",
+    "Experience":[
+        {
+        "Company":"CGI","Job":"Apprentice consultant",
+        "Responsibilities":"Working within the BIS dev team to deliver corporate systems. My role included data analysis with SQL server, data visualisation, Angular and typescript development",
+        "Date":"1 July 2025 - Present"
+        },
+        
+        {
+        "Company":"BJSS","Job":"Apprentice Applications Lead",
+        "Responsibilities":"Developed custom Power Platform solutions that solved complex business problems. Delivered an end to end risk management solution, used for mitigating over 200 company risks",
+        "Date":"29 April 2024 - 1 July 2025"
+        }
+    ],
+    "Personal Projects":[
+        {
+            "Name":"Translate",
+            "Description":"Translator for speech, text and images",
+            "Tech":"Flask, Javascript, SQLite, HTML, Machine learning libraries"
+        },
+        {
+            "Name":"TrackMate",
+            "Description":"Mobile app that tracks drag runs in a car. Records 0-60mph, top speed and 1/4 mile times.",
+            "Tech":"React Native, Supabase, native sensors"
+        },
+        {
+            "Name":"EasyVid",
+            "Description":"Simple website built for my girlfriend to allow her to convert .mts video files to iphone compatible .mp4 files",
+            "Tech":"express.js, HTML, Javascript, ffmpeg"
+        }
+    ]
+
+}
