@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: Ping Render service
         run: |
-          curl -fsS https://your-service.onrender.com/ping || true
+          curl -fsS https://james-warriner-api.onrender.com/api/ping || true
