@@ -132,13 +132,45 @@
 <div class="postman-response mt-4 position-relative">
   <h5>
     Response
-    <button id="expandResponse" class="btn btn-sm btn-outline-secondary ms-2" title="Expand">
+    <button id="openFullResponse" 
+            class="btn btn-sm btn-outline-secondary ms-2" 
+            title="Expand response">
       🔍
     </button>
   </h5>
   <pre class="response-content" id="response"></pre>
 </div>
 
+
+        </div>
+      </div>
+    </div>
+  </div>
+    <div
+    class="modal fade"
+    id="responseModal"
+    tabindex="-1"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+ 
+        </div>
+        <div class="modal-body p-0">
+          <pre
+            id="modalResponse"
+            style="height:100%; overflow:auto; margin:0; padding:1rem; background:#fff; font-family:Courier, monospace;"
+          ></pre>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary w-100"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
         </div>
       </div>
     </div>

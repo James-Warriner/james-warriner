@@ -1,16 +1,17 @@
-    document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
+  const openBtn    = document.getElementById('openFullResponse');
+  const respPre    = document.getElementById('response');
+  const modalPre   = document.getElementById('modalResponse');
+  const respModal  = new bootstrap.Modal(document.getElementById('responseModal'));
 
-
-  const expandBtn = document.getElementById('expandResponse');
-  const responsePre = document.getElementById('response');
-
-  expandBtn.addEventListener('click', () => {
-    const isFull = responsePre.classList.toggle('fullscreen');
-    document.body.classList.toggle('response-expanded', isFull);
-    expandBtn.textContent = isFull ? '❎' : '🔍';
-    expandBtn.title = isFull ? 'Close' : 'Expand';
+  openBtn.addEventListener('click', () => {
+  
+    modalPre.textContent = respPre.textContent || '[ no response ]';
+ 
+    respModal.show();
   });
 });
+
 
     
     
