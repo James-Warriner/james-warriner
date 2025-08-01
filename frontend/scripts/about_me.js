@@ -52,7 +52,7 @@
 
 
     async function getInfo(urlPart){
-        const url = `http://localhost:3000/api/${urlPart}`
+        const url = `https://james-warriner-api.onrender.com/api/${urlPart}`
         try{
             const res = await fetch(url,
             {

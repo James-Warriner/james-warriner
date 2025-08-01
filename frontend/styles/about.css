@@ -1,4 +1,4 @@
-
+/* Enhanced responsive styles for mobile */
 
 .mode-switch input {
   accent-color: #0d6efd;
@@ -8,34 +8,41 @@
   cursor: pointer;
 }
 
-
 .mode-content { display: none; }
 .mode-content.active { display: block; }
-
 
 .gui-section h2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
 
-
 .api-section {
   font-family: 'Courier New', monospace;
 }
 
 .postman-section {
-  background-color: #f4f4f4;
+  background-color: #f4f9fc;
   border: 1px solid #ced4da;
+  padding: 1rem;
 }
 
+.postman-controls {
+  display: flex;
+  align-items: flex-start;
+}
 
 .method-select {
   width: 5rem;
+  flex-shrink: 0;
 }
 .url-input {
   flex: 1;
+  min-width: 0;
 }
 
+.send-btn {
+  flex-shrink: 0;
+}
 
 .headers,
 .body {
@@ -43,7 +50,6 @@
   font-family: inherit;
   font-size: 0.9rem;
 }
-
 
 .response-content {
   background: #fff;
@@ -80,8 +86,43 @@
   line-height: 1.4;
 }
 
-
+/* Mobile-specific adjustments */
 @media (max-width: 576px) {
+  /* Stack mode-switch vertically */
+  .mode-switch {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .mode-switch input,
+  .mode-switch label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Stack Postman controls */
+  .postman-controls {
+    flex-direction: column;
+  }
+  .method-select,
+  .url-input,
+  .send-btn {
+    width: 100%;
+    margin: 0 0 0.5rem 0;
+  }
+
+  /* Reduce code and JSON text sizes */
+  .headers,
+  .body {
+    min-height: 80px;
+    font-size: 0.85rem;
+  }
+  .response-content {
+    max-height: 200px;
+    font-size: 0.85rem;
+  }
+
+  /* JSON display tweaks */
   .json-array-item {
     padding: 0.25rem;
   }
@@ -91,5 +132,11 @@
   .json-kv p {
     font-size: 0.85rem;
   }
-}
 
+  /* Central and Postman container padding adjustments */
+  .central-container,
+  .postman-section,
+  .mode-content {
+    padding: 1rem !important;
+  }
+}

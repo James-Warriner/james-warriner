@@ -59,3 +59,49 @@ h1 {
   scroll-snap-type: x mandatory;
 }
 
+/* Mobile tweaks for the horizontal grid */
+@media (max-width: 576px) {
+  .horizontal-scroll-grid {
+    /* make each “column” roughly four-fifths of the viewport */
+    grid-auto-columns: 80%;
+    gap: 0.75rem;
+    padding-bottom: 1rem;             /* extra space for the scrollbar */
+    scroll-snap-type: x mandatory;
+  }
+
+  /* ensure each direct child snaps to its start edge */
+  .horizontal-scroll-grid > * {
+    scroll-snap-align: start;
+  }
+
+  /* optional: reduce card padding/font for very small screens */
+  .horizontal-scroll-grid .card {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Constrain the modal on desktop */
+#imageModal .modal-dialog {
+  max-width: 80vw;       /* never wider than 80% of the viewport */
+}
+
+/* Constrain the modal on mobile even more */
+@media (max-width: 576px) {
+  #imageModal .modal-dialog {
+    max-width: 95vw;     /* almost full-width but with a sliver of padding */
+    margin: 1rem auto;   /* give it some breathing room top/bottom */
+  }
+}
+
+/* Make sure the image scales correctly */
+#modalImage {
+  display: block;
+  width: 100%;           /* fill the modal’s width */
+  height: auto;          /* keep aspect ratio */
+  max-height: 90vh;      /* never exceed 90% of viewport height */
+  object-fit: contain;   /* letterbox if needed */
+  margin: 0 auto;        /* center inside the modal */
+}
+
+
